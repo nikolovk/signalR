@@ -26,4 +26,3 @@ var app;
     angular.module('app')
         .controller('app.HubController', hubController);
 })(app || (app = {}));
-//# sourceMappingURL=hub.controller.js.map

@@ -7,7 +7,7 @@ module app {
 
         constructor() {
             this.hub = (<any>jQuery.connection).testHub;
-            this.hub.on('show', (result: number) => {
+            this.hub.on('show', (result: number) => { 
                 this.show = result;
             });
 
