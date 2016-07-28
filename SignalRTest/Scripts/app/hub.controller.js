@@ -7,10 +7,10 @@ var app;
             this.show = 0;
             this.input = 0;
             this.hub = jQuery.connection.testHub;
-            jQuery.connection.hub.start();
             this.hub.on('show', function (result) {
                 _this.show = result;
             });
+            jQuery.connection.hub.start();
         }
         HubController.prototype.divideByTwo = function () {
             this.hub.invoke('DivideByTwo', this.input);

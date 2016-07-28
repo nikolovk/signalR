@@ -7,10 +7,11 @@ module app {
 
         constructor() {
             this.hub = (<any>jQuery.connection).testHub;
-            jQuery.connection.hub.start();
             this.hub.on('show', (result: number) => {
                 this.show = result;
-            })
+            });
+
+            jQuery.connection.hub.start();
         }
 
         divideByTwo(): void {
